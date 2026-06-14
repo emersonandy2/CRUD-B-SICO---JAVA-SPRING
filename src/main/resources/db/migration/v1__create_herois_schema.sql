@@ -1,0 +1,7 @@
+CREATE TABLE Herois_db (
+    id BIGSERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    classe VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    pontuacao INTEGER NOT NULL
+);
