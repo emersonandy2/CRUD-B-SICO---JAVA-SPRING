@@ -2,9 +2,8 @@ package dev.andy.CrudCadastro.dto;
 
 import dev.andy.CrudCadastro.Entity.Herois;
 import dev.andy.CrudCadastro.enums.Classes;
-import jakarta.persistence.criteria.CriteriaBuilder;
 
-public record HeroisReponse(
+public record HeroisResponse(
         Long id,
         String nome,
         Classes classe,
@@ -12,8 +11,8 @@ public record HeroisReponse(
         Integer pontuacao
 ) {
 
-   public static HeroisReponse fromEntity(Herois herois) {
-       return new HeroisReponse(
+   public static HeroisResponse fromEntity(Herois herois) {
+       return new HeroisResponse(
                herois.getId(),
                herois.getNome(),
                herois.getClasse(),

@@ -5,4 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface HeroisRepository extends JpaRepository<Herois, Long> {
 
+    boolean existsByEmail(String email);
+
+
 }
