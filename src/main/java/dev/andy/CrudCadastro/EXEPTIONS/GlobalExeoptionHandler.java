@@ -1,4 +1,4 @@
-package dev.andy.CrudCadastro.exeptions;
+package dev.andy.CrudCadastro.EXEPTIONS;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package dev.andy.CrudCadastro.enums;
+package dev.andy.CrudCadastro.ENUMS;
 
 public enum Classes {
     MAGO,

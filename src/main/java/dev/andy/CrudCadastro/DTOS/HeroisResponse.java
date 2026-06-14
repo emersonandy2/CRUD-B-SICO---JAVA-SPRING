@@ -1,7 +1,7 @@
-package dev.andy.CrudCadastro.dto;
+package dev.andy.CrudCadastro.DTOS;
 
-import dev.andy.CrudCadastro.Entity.Herois;
-import dev.andy.CrudCadastro.enums.Classes;
+import dev.andy.CrudCadastro.ENTITYS.Herois;
+import dev.andy.CrudCadastro.ENUMS.Classes;
 
 public record HeroisResponse(
         Long id,

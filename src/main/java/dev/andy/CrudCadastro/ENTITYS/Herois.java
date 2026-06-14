@@ -1,7 +1,7 @@
-package dev.andy.CrudCadastro.Entity;
+package dev.andy.CrudCadastro.ENTITYS;
 
 
-import dev.andy.CrudCadastro.enums.Classes;
+import dev.andy.CrudCadastro.ENUMS.Classes;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

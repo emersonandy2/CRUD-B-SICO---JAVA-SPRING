@@ -1,10 +1,10 @@
-package dev.andy.CrudCadastro.service;
+package dev.andy.CrudCadastro.SERVICE;
 
-import dev.andy.CrudCadastro.Entity.Herois;
-import dev.andy.CrudCadastro.dto.HeroisResponse;
-import dev.andy.CrudCadastro.dto.HeroisRequest;
-import dev.andy.CrudCadastro.exeptions.NotFoundEmail;
-import dev.andy.CrudCadastro.repository.HeroisRepository;
+import dev.andy.CrudCadastro.ENTITYS.Herois;
+import dev.andy.CrudCadastro.DTOS.HeroisResponse;
+import dev.andy.CrudCadastro.DTOS.HeroisRequest;
+import dev.andy.CrudCadastro.EXEPTIONS.NotFoundEmail;
+import dev.andy.CrudCadastro.REPOSITORY.HeroisRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -33,7 +33,7 @@ public class HeroisService {
 
     }
 
-    public Page<HeroisResponse> getAll(HeroisRequest request, Pageable pageable) {
+    public Page<HeroisResponse> getAll(Pageable pageable) {
         return repository.findAll(pageable).map(HeroisResponse::fromEntity);}
 
 
