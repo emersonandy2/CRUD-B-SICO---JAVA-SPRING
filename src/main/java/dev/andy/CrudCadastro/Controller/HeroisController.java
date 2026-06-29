@@ -44,7 +44,7 @@ public class HeroisController {
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteHerois(@PathVariable Long id) {
+    public void deletarHerois(@PathVariable Long id) {
         heroisService.deleteById(id);
     }
 }
